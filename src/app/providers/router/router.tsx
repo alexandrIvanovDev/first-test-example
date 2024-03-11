@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouteObject, RouterProvider } from 'react-router-dom';
-import { LoginPage } from '../../../pages/login/login-page.tsx';
-import { NotFoundPage } from '../../../pages/not-found/not-found-page.tsx';
-import { Layout } from '../../../components/layout/layout.tsx';
-import { MainPage } from '../../../pages/main/main-page.tsx';
+import { MainPage } from 'pages/main/main-page.tsx';
+import { LoginPage } from 'pages/login/login-page.tsx';
+import { NotFoundPage } from 'pages/not-found/not-found-page.tsx';
+import { Layout } from 'components/layout/layout.tsx';
 
 const routes: RouteObject[] = [
   {

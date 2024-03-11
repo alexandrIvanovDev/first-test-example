@@ -1,6 +1,6 @@
+import { Input } from 'components/input/input.tsx';
 import { Button } from '../button/button.tsx';
 import s from './login-form.module.scss';
-import { Input } from '../input/input.tsx';
 import { LoginFormType, useLogin } from './use-login.ts';
 
 type Props = {

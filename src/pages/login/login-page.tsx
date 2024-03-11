@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { LoginForm } from '../../components/login-form/login-form.tsx';
-import { LoginFormType } from '../../components/login-form/use-login.ts';
+import { LoginFormType } from 'components/login-form/use-login.ts';
+import { LoginForm } from 'components/login-form/login-form.tsx';
+import s from './login-page.module.scss';
 
 export const LoginPage = () => {
   const [userData, setUserData] = useState<LoginFormType | null>(null);
@@ -10,7 +11,7 @@ export const LoginPage = () => {
   };
 
   return (
-    <>
+    <div className={s.container}>
       <h2>Login page</h2>
       <LoginForm submitForm={submitForm} />
       {userData
@@ -21,6 +22,6 @@ export const LoginPage = () => {
             <div>Password: {userData.password}</div>
           </>
         )}
-    </>
+    </div>
   );
 };

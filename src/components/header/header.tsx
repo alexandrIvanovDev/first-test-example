@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
+import { routePaths } from 'app/providers/router/routePaths.ts';
 import s from './header.module.scss';
-import { routePaths } from '../../app/providers/router/routePaths.ts';
 
 type RouteItem = {
   link: string

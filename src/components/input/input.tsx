@@ -1,8 +1,8 @@
 import { ComponentPropsWithoutRef, forwardRef, useState } from 'react';
 import clsx from 'clsx';
+import { EyeOff } from 'assets/icons/EyeOff.tsx';
+import { Eye } from 'assets/icons/Eye.tsx';
 import s from './input.module.scss';
-import { EyeOff } from '../../assets/icons/EyeOff.tsx';
-import { Eye } from '../../assets/icons/Eye.tsx';
 
 export type TextFieldProps = {
   type?: 'text' | 'password' | 'search' | 'number'

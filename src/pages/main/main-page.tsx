@@ -1,7 +1,7 @@
-import { ButtonColorChanger } from '../../components/button-color-changer/button-color-changer.tsx';
+import { ButtonColorChanger } from 'components/button-color-changer/button-color-changer.tsx';
+import { Input } from 'components/input/input.tsx';
+import { DateComponent } from 'components/date-picker/date-component.tsx';
 import s from './main-page.module.scss';
-import { Input } from '../../components/input/input.tsx';
-import { DateComponent } from '../../components/date-picker/date-component.tsx';
 
 export const MainPage = () => (
   <div className={s.container}>

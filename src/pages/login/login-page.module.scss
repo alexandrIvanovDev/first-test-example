@@ -1,11 +1,6 @@
-@import 'src/app/styles/mixins';
+@import "src/app/styles/mixins";
 
 .container {
   @include container(var(--container-width));
   @include flex(column, center, center, 1rem);
-
-  .header {
-    text-align: center;
-    margin-top: 50px;
-  }
 }

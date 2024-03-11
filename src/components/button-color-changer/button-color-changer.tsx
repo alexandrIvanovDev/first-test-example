@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
-import { Button } from '../button/button.tsx';
-import { getRandomColor } from '../../common/getRandomColor.ts';
-import { getRandomText } from '../../common/getRandomText.ts';
+import { getRandomColor } from 'common/getRandomColor.ts';
+import { getRandomText } from 'common/getRandomText.ts';
+import { Button } from 'components/button/button.tsx';
 import s from './button-color-changer.module.scss';
 
 type Props = {
