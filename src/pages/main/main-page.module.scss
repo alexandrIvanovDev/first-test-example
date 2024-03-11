@@ -1,5 +1,17 @@
 @import "src/app/styles/mixins";
 
-.wrapper {
-  @include flex(column, center, center, 1rem);
+.container {
+  @include container(1080px);
+
+  .title {
+    text-align: center;
+  }
+
+  .information {
+    @include flex(row, center, center, 3rem);
+
+    .colorChanger {
+      @include flex(column, center, center, 1rem);
+    }
+  }
 }

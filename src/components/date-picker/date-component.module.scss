@@ -1,0 +1,5 @@
+@import "src/app/styles/mixins";
+
+.wrapper {
+  @include flex(column, center, center, 1rem);
+}
