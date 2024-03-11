@@ -1,0 +1,23 @@
+@import 'src/app/styles/mixins';
+
+.button {
+  @include flex;
+
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 28px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+
+  &:focus-visible {
+    outline: 2px solid blue;
+  }
+
+  &:disabled {
+    cursor: initial;
+    opacity: 0.5;
+  }
+}

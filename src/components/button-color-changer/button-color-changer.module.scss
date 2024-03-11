@@ -1,0 +1,9 @@
+@import "src/app/styles/mixins";
+
+.wrapper {
+  @include flex(column);
+
+  .color {
+    cursor: pointer;
+  }
+}
