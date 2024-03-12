@@ -1,9 +1,5 @@
 import { Router } from './providers/router/router.tsx';
 
-const App = () => (
-  <div className="wrapper">
-    <Router />
-  </div>
-);
+const App = () => <Router />;
 
 export default App;

@@ -1,10 +1,10 @@
 import { ButtonColorChanger } from 'components/button-color-changer/button-color-changer.tsx';
 import { Input } from 'components/input/input.tsx';
-import { DateComponent } from 'components/date-picker/date-component.tsx';
+import { DatePicker } from 'components/date-picker/date-picker.tsx';
 import s from './main-page.module.scss';
 
 export const MainPage = () => (
-  <div className={s.container}>
+  <main className={s.container}>
     <h2 className={s.title}>Main page</h2>
     <div className={s.information}>
       <div className={s.colorChanger}>
@@ -12,8 +12,8 @@ export const MainPage = () => (
         <Input placeholder="Check color" />
       </div>
       <div>
-        <DateComponent />
+        <DatePicker />
       </div>
     </div>
-  </div>
+  </main>
 );

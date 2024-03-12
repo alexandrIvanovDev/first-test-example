@@ -1,11 +1,11 @@
-import { DatePicker, DatePickerProps, Space } from 'antd';
+import { DatePicker as DatePickerAntd, DatePickerProps, Space } from 'antd';
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import s from './date-component.module.scss';
+import s from './date-picker.module.scss';
 
 const monthFormat = 'YYYY/MM';
 
-export const DateComponent = () => {
+export const DatePicker = () => {
   const [currentMonth, setCurrentMonth] = useState<number>();
   const [currentYear, setCurrentYear] = useState<number>();
 
@@ -22,7 +22,7 @@ export const DateComponent = () => {
 
   return (
     <Space className={s.wrapper}>
-      <DatePicker
+      <DatePickerAntd
         value={dayjs(`${currentYear}-${currentMonth}`)}
         format={monthFormat}
         onChange={onChange}
